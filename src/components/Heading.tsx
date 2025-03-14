@@ -13,7 +13,7 @@ const Heading = ({
 }) => {
 	return (
 		<div
-			className={`${className} max-w-[50rem] mx-auto mb-12 lg:mb-20 md:text-center`}
+			className={`max-w-[50rem] mx-auto mb-12 lg:mb-20 md:text-center ${className || ""}`}
 		>
 			{tag && <TagLine className="mb-4 md:justify-center">{tag}</TagLine>}
 			{title && <h2 className="h2">{title}</h2>}

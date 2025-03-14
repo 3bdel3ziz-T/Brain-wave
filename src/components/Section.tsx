@@ -8,6 +8,7 @@ interface SectionProps {
 	crossesOffset?: string;
 	customPaddings?: boolean;
 	children?: React.ReactNode;
+	position?: string;
 }
 const Section = ({
 	className,
@@ -15,13 +16,14 @@ const Section = ({
 	crosses,
 	crossesOffset,
 	customPaddings,
+	position,
 	children,
 }: SectionProps) => {
 	return (
 		<div
 			id={id}
 			className={`
-    relative 
+    ${position ? position : "relative"}
     ${
 			customPaddings ||
 			`py-10 lg:py-16 xl:py-20 ${crosses ? "lg:py-32 xl:py-40" : ""}`
