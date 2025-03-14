@@ -1,9 +1,4 @@
-import discordBlack from "../assets/images/discord-black.svg";
-import facebook from "../assets/images/facebook.svg";
-import instagram from "../assets/images/instagram.svg";
-import telegram from "../assets/images/telegram.svg";
-import twitter from "../assets/images/twitter.svg";
-
+import { discordBlack, facebook, instagram, telegram, twitter } from "../assets/index";
 export type Social = { id: string, title: string, iconUrl: string, url: string }
 
 export const socials: Social[] = [

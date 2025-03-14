@@ -1,7 +1,4 @@
-import roadmap1 from "../assets/roadmap1.svg";
-import roadmap2 from "../assets/roadmap2.svg";
-import roadmap3 from "../assets/roadmap3.svg";
-import roadmap4 from "../assets/roadmap4.svg";
+import { roadmap1, roadmap2, roadmap3, roadmap4 } from "../assets/index"
 
 export type RoadMap = { id: string, title: string, text: string, date: string, status: string, imageUrl: string, colorful?: boolean }
 

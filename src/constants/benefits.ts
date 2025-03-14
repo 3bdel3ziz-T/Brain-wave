@@ -1,12 +1,7 @@
-import benefitIcon1 from "../assets/benefits/icon-1.svg";
-import benefitIcon2 from "../assets/benefits/icon-2.svg";
-import benefitIcon3 from "../assets/benefits/icon-3.svg";
-import benefitIcon4 from "../assets/benefits/icon-4.svg";
-import benefitImage2 from "../assets/benefits/image-2.svg";
+import { benefitIcon1, benefitIcon2, benefitIcon3, benefitIcon4, benefitImage2 } from "../assets/index";
+export type Benefit = { id: string, title: string, text: string, backgroundUrl: string, iconUrl: string, imageUrl: string, light?: boolean }
 
-export type Benefits = { id: string, title: string, text: string, backgroundUrl: string, iconUrl: string, imageUrl: string, light?: boolean }
-
-export const benefits: Benefits[] = [
+export const benefits: Benefit[] = [
   {
     id: "0",
     title: "Ask anything",

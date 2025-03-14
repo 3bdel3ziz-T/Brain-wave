@@ -1,11 +1,4 @@
-import figma from "../assets/icons/figma.svg";
-import notion from "../assets/icons/notion.svg";
-import discord from "../assets/icons/discord.svg";
-import slack from "../assets/icons/slack.svg";
-import photoshop from "../assets/icons/photoshop.svg";
-import protopie from "../assets/icons/protopie.svg";
-import raindrop from "../assets/icons/raindrop.svg";
-import framer from "../assets/icons/framer.svg";
+import { figma, notion, discord, slack, photoshop, protopie, raindrop, framer } from "../assets/index"
 
 export type CollabApps = { id: string, title: string, icon: string, width: number, height: number }
 

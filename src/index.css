@@ -29,7 +29,7 @@
 	--color-5: #858dff;
 	--color-6: #ff98e2;
 
-	--stroke-1: #26242c;
+	--color-stroke-1: #26242c;
 
 	--color-n-1: #ffffff;
 	--color-n-2: #cac6dd;
@@ -67,6 +67,10 @@
 	--z-3: 3;
 	--z-4: 4;
 	--z-5: 5;
+
+	--animate-spinReverse: spin 1s linear reverse infinite;
+	--animate-appsLoop: spin 13s linear normal infinite;
+	--animate-appsLoopReverse: spin 13s linear reverse infinite;
 }
 
 @layer utilities {
