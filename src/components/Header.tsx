@@ -5,6 +5,7 @@ import Button from "./CustomButton";
 import { HamburgerMenu } from "./design/Header";
 import { useState } from "react";
 import MenuSvg from "../assets/svg/MenuSvg";
+import { Link } from "react-router-dom";
 
 const Header = () => {
 	const currentLocation = useLocation();
@@ -58,9 +59,9 @@ const Header = () => {
 				>
 					New account
 				</a>
-				<Button className="hidden lg:inline-flex" href="#login">
-					Sign in
-				</Button>
+				<Link to="/signIn">
+					<Button className="hidden lg:inline-flex">Sign in</Button>
+				</Link>
 
 				<Button className="ml-auto lg:hidden" px="px-3" onClick={toggleNav}>
 					<MenuSvg openNavigation={openNav} />

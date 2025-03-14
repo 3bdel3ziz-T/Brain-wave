@@ -15,6 +15,10 @@
 	scroll-behavior: smooth;
 }
 
+input:focus {
+	outline: none;
+}
+
 @layer base {
 	body {
 		@apply font-sans bg-n-8 text-n-1 text-base;
@@ -30,7 +34,6 @@
 	--color-6: #ff98e2;
 
 	--color-stroke-1: #26242c;
-
 	--color-n-1: #ffffff;
 	--color-n-2: #cac6dd;
 	--color-n-3: #ada8c3;
@@ -136,6 +139,26 @@
 		animation: shine 3s infinite linear;
 		animation-fill-mode: forwards;
 		-webkit-text-size-adjust: none;
+	}
+
+	.grid-web {
+		--gap: 5em;	
+		--line: 1px;
+		--color: rgba(255, 255, 255, 0.2);
+	
+		background-image: linear-gradient(
+				-90deg,
+				transparent calc(var(--gap) - var(--line)),
+				var(--color) calc(var(--gap) - var(--line) + 1px),
+				var(--color) var(--gap)
+			),
+			linear-gradient(
+				0deg,
+				transparent calc(var(--gap) - var(--line)),
+				var(--color) calc(var(--gap) - var(--line) + 1px),
+				var(--color) var(--gap)
+			);
+		background-size: var(--gap) var(--gap);
 	}
 }
 
