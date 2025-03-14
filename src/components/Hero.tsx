@@ -28,7 +28,7 @@ const Hero = () => {
 			<div className="container relative">
 				<div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
 					<h1 className="h1 mb-6">
-						Explore the Possibilities of&nbsp;AI&nbsp;Chatting with {` `}
+						Explore the Possibilities of&nbsp;AI&nbsp;Chatting with{" "}
 						<span className="inline-block relative">
 							Brainwave{" "}
 							<img
@@ -62,7 +62,15 @@ const Hero = () => {
 									height={490}
 									alt="AI"
 								/>
-								<Generating className="absolute left-4 right-4 bottom-5 md:left-1/2 md:right-auto md:bottom-8 md:w-[31rem] md:-translate-x-1/2" />
+								<Generating
+									items={[
+										"Enhancing pictures with latest AI tools",
+										"Learning anything with AI ",
+										"Summaries PDF to understandable Points",
+										"Generating pictures using prompts",
+									]}
+									className="absolute left-4 right-4 bottom-5 md:left-1/2 md:right-auto md:bottom-8 md:w-[31rem] md:-translate-x-1/2"
+								/>
 								<ScrollParallax strength={20}>
 									<ul className="hidden absolute divide-x-1 divide-n-4 -left-[5.5rem] bottom-[7.5rem] py-3 bg-n-9/40 backdrop-blur border border-n-1/10 rounded-2xl xl:flex">
 										{heroIcons.map((icon, index) => (

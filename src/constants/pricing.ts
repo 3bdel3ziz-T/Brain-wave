@@ -1,4 +1,4 @@
-export type Pricing = { id: string, title: string, description: string, price: string | null, features: string[] }
+export type Pricing = { id: string, title: string, description: string, price: string, features: string[] }
 
 export const pricing: Pricing[] = [
   {
@@ -27,7 +27,7 @@ export const pricing: Pricing[] = [
     id: "2",
     title: "Enterprise",
     description: "Custom AI chatbot, advanced analytics, dedicated account",
-    price: null,
+    price: "",
     features: [
       "An AI chatbot that can understand your queries",
       "Personalized recommendations based on your preferences",

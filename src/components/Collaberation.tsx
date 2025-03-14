@@ -54,12 +54,12 @@ const Collaboration = () => {
 							{collabApps.map((app, index) => (
 								<li
 									key={app.id}
-									className={`absolute top-0 left-1/2 h-1/2 -ml-[1.6rem] origin-bottom animate-appsLoop rotate-${
+									className={`absolute top-0 left-1/2 h-1/2 -ml-[1.6rem] origin-bottom animate-spin-slow rotate-${
 										index * 45
 									}`}
 								>
 									<div
-										className={`relative -top-[1.6rem] flex w-[3.2rem] h-[3.2rem] animate-appsLoopReverse bg-n-7 border border-n-1/15 rounded-xl -rotate-${
+										className={`relative -top-[1.6rem] flex w-[3.2rem] h-[3.2rem] animate-spin-slow-Reverse bg-n-7 border border-n-1/15 rounded-xl -rotate-${
 											index * 45
 										}`}
 									>

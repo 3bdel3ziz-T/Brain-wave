@@ -69,13 +69,73 @@
 	--z-5: 5;
 
 	--animate-spinReverse: spin 1s linear reverse infinite;
-	--animate-appsLoop: spin 13s linear normal infinite;
-	--animate-appsLoopReverse: spin 13s linear reverse infinite;
+	--animate-spin-slow: spin 13s linear normal infinite;
+	--animate-spin-slow-Reverse: spin 13s linear reverse infinite;
+	--animate-swipeUp: swipeUp 4s linear infinite;
+
+	@keyframes swipeUp {
+		0% {
+			transform: translateY(0%);
+		}
+		10% {
+			transform: translateY(-100%);
+		}
+
+		25% {
+			transform: translateY(-90%);
+		}
+
+		35% {
+			transform: translateY(-200%);
+		}
+
+		50% {
+			transform: translateY(-190%);
+		}
+
+		60% {
+			transform: translateY(-290%);
+		}
+
+		75% {
+			transform: translateY(-280%);
+		}
+
+		85% {
+			transform: translateY(-390%);
+		}
+
+		100% {
+			transform: translateY(-380%);
+		}
+	}
+	@keyframes shine {
+		0% {
+			background-position: 0;
+		}
+		60% {
+			background-position: 180px;
+		}
+		100% {
+			background-position: 180px;
+		}
+	}
 }
 
 @layer utilities {
 	.tap-highlight-color {
 		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	}
+	.shine {
+		padding: 12px 40px;
+		color: #fff;
+		/* background: linear-gradient(to right, #9f9f9f 0, #fff 10%, #868686 20%); */
+		background-position: 0;
+		/* -webkit-background-clip: text; */
+		-webkit-text-fill-color: transparent;
+		animation: shine 3s infinite linear;
+		animation-fill-mode: forwards;
+		-webkit-text-size-adjust: none;
 	}
 }
 

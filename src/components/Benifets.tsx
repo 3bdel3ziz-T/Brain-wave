@@ -17,7 +17,7 @@ const Benefits = () => {
 				<div className="flex flex-wrap justify-center items-center gap-10 mb-10">
 					{benefits.map((item) => (
 						<div
-							className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem]"
+							className="block relative p-0.5 z-0 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem]"
 							style={{
 								backgroundImage: `url(${item.backgroundUrl})`,
 							}}
@@ -33,7 +33,7 @@ const Benefits = () => {
 										height={48}
 										alt={item.title}
 									/>
-									<p className="ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider">
+									<p className="ml-auto hover:mr-1 cursor-pointer font-code text-xs font-bold text-n-1 uppercase tracking-wider">
 										Explore more
 									</p>
 									<Arrow />
