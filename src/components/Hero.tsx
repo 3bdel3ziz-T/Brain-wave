@@ -80,14 +80,10 @@ const Hero = () => {
 										))}
 									</ul>
 								</ScrollParallax>
-								<ScrollParallax strength={20}>
-									<div>
 										<Notification
 											className="hidden absolute -right-[5.5rem] bottom-[11rem] w-[18rem] xl:flex"
 											title="Code generation"
 										/>
-									</div>
-								</ScrollParallax>
 							</div>
 						</div>
 
